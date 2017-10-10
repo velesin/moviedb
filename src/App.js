@@ -1,18 +1,23 @@
 import React, { Component } from 'react';
+import { search } from './services/movies.service';
 import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
+  state = {
+    movies: []
+  };
+
+  async componentDidMount() {
+    const movies = await search('termi');
+
+    this.setState({ movies });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <pre>{JSON.stringify(this.state.movies, null, 2) }</pre>
       </div>
     );
   }
