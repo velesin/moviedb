@@ -1,26 +1,26 @@
 import React, { Component } from 'react';
 import { search } from './services/movies.service';
-import logo from './logo.svg';
-import './App.css';
+import { SearchBox } from './search/SearchBox';
+import { SearchResultList } from './search/SearchResultList';
 
 class App extends Component {
-  state = {
-    movies: []
-  };
+    state = {
+        movies: []
+    }
 
-  async componentDidMount() {
-    const movies = await search('termi');
-
-    this.setState({ movies });
-  }
-
-  render() {
-    return (
-      <div className="App">
-        <pre>{JSON.stringify(this.state.movies, null, 2) }</pre>
-      </div>
-    );
-  }
+    doSearch = async query => {
+        const { results: movies } = await search(query);
+        this.setState({ movies });
+    }
+    
+    render() {
+        return (
+            <div className="Search">
+                <SearchBox onQuerySubmit={ this.doSearch } />
+                <SearchResultList movies={ this.state.movies }/>
+            </div>            
+        );
+    }    
 }
 
 export default App;

@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly formatted movie list item 1`] = `
+<div
+  className="SearchResultListItem"
+>
+  <PosterImage
+    path={undefined}
+    title="TITLE"
+  />
+  <div
+    className="SearchResultListItem__title"
+  >
+    TITLE
+  </div>
+  <div
+    className="SearchResultListItem__date"
+  >
+    2010-03-12
+  </div>
+  <div
+    className="SearchResultListItem__rating"
+  >
+    5.4
+  </div>
+</div>
+`;

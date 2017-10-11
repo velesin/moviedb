@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders an image with a correct path and alt attribute 1`] = `
+<img
+  alt="TITLE"
+  src="https://image.tmdb.org/t/p/w90_and_h134_bestv2/PATH"
+/>
+`;

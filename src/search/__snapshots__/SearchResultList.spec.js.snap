@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly a list with movies 1`] = `
+<div
+  className="SearchResultList"
+>
+  <SearchResultListItem
+    movie={
+      Object {
+        "id": 1,
+      }
+    }
+  />
+  <SearchResultListItem
+    movie={
+      Object {
+        "id": 2,
+      }
+    }
+  />
+  <SearchResultListItem
+    movie={
+      Object {
+        "id": 3,
+      }
+    }
+  />
+</div>
+`;
