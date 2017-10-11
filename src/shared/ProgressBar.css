@@ -1,0 +1,9 @@
+.ProgressBar {
+    margin-top: 64px;
+    text-align: center;
+    font-style: italic;
+    font-size: 24px;
+    color: #ffffff;
+    font-weight: 200;
+    letter-spacing: 8px;
+}

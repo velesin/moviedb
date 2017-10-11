@@ -1,5 +1,4 @@
-.SearchResultList {
-    padding-bottom: 64px;
+.SearchResultList {    
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
