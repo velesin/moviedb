@@ -1,0 +1,30 @@
+.SearchBox {
+    margin-top: 64px;
+    display: flex;
+}
+.SearchBox__input, .SearchBox__button {
+    box-sizing: border-box;
+    padding: 16px 32px 16px 32px;
+    font-size: 32px;
+    border: none;
+    outline: none;
+}
+.SearchBox__input {
+    flex-grow: 1;
+    background-color: #ffffff;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+.SearchBox__input:focus {
+    background-color: #ffffe8;
+}
+.SearchBox__button {
+    background-color: #a0a0a0;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    cursor: pointer;
+}
+.SearchBox__button:hover {
+    background-color: #b8b8b0;
+    color: #402000;
+}

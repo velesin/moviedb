@@ -3,6 +3,8 @@ import { search } from './services/movies.service';
 import { SearchBox } from './search/SearchBox';
 import { SearchResultList } from './search/SearchResultList';
 
+import './App.css';
+
 class App extends Component {
     state = {
         movies: []
@@ -15,7 +17,7 @@ class App extends Component {
     
     render() {
         return (
-            <div className="Search">
+            <div className="App">
                 <SearchBox onQuerySubmit={ this.doSearch } />
                 <SearchResultList movies={ this.state.movies }/>
             </div>            

@@ -3,6 +3,6 @@
 exports[`renders an image with a correct path and alt attribute 1`] = `
 <img
   alt="TITLE"
-  src="https://image.tmdb.org/t/p/w90_and_h134_bestv2/PATH"
+  src="https://image.tmdb.org/t/p/w300_and_h450_bestv2/PATH"
 />
 `;

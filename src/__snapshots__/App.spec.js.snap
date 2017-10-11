@@ -2,7 +2,7 @@
 
 exports[`renders correct initial page layout 1`] = `
 <div
-  className="Search"
+  className="App"
 >
   <SearchBox
     onQuerySubmit={[Function]}

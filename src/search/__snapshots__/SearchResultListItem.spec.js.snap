@@ -4,24 +4,44 @@ exports[`renders correctly formatted movie list item 1`] = `
 <div
   className="SearchResultListItem"
 >
-  <PosterImage
-    path={undefined}
-    title="TITLE"
-  />
   <div
-    className="SearchResultListItem__title"
+    className="SearchResultListItem__card"
   >
-    TITLE
-  </div>
-  <div
-    className="SearchResultListItem__date"
-  >
-    2010-03-12
-  </div>
-  <div
-    className="SearchResultListItem__rating"
-  >
-    5.4
+    <div
+      className="SearchResultListItem__front"
+    >
+      <PosterImage
+        path={undefined}
+        title="TITLE"
+      />
+    </div>
+    <div
+      className="SearchResultListItem__back"
+    >
+      <div
+        className="SearchResultListItem__title"
+      >
+        TITLE
+      </div>
+      <div
+        className="SearchResultListItem__synopsis"
+      />
+      <div
+        className="SearchResultListItem__meta"
+      >
+        <div
+          className="SearchResultListItem__date"
+        >
+          2010-03-12
+        </div>
+        <div
+          className="SearchResultListItem__rating"
+        >
+          ★ 
+          5.4
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 `;
